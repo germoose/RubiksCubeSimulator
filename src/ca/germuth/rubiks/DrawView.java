@@ -18,6 +18,7 @@ public class DrawView extends View {
     public void onDraw(Canvas canvas) {
             canvas.drawLine(0, 0, 20, 20, paint);
             canvas.drawLine(20, 0, 0, 20, paint);
+            canvas.drawLine(0, 0, 30, 30, paint);
     }
 
 }
