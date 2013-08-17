@@ -1,0 +1,147 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="12"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:rowCount="5"
+    android:background="#f0f0f0"
+    android:screenOrientation="landscape"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:text="L"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="l"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="0"
+        android:layout_gravity="left|center_vertical"
+        android:layout_row="2"
+        android:text="L&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="2"
+        android:text="l&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="0"
+        android:layout_gravity="left|bottom"
+        android:layout_row="3"
+        android:text="F&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="3"
+        android:text="f&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="4"
+        android:text="x;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="4"
+        android:text="x&apos;"
+        android:textSize="18dp" />
+    <DrawView
+        android:layout_width="277dp"
+        android:layout_column="2"
+        android:layout_columnSpan="8"
+        android:layout_gravity="fill_horizontal|fill_vertical"
+        android:layout_row="0"
+        android:layout_rowSpan="5"
+        android:textSize="18dp" />
+    <Button
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:text="U"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="0"
+        android:text="u;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="10"
+        android:layout_row="4"
+        android:text="y&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="11"
+        android:layout_row="4"
+        android:text="y"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="11"
+        android:layout_gravity="left|top"
+        android:layout_row="1"
+        android:text="R"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="11"
+        android:layout_row="3"
+        android:text="Y"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="11"
+        android:layout_gravity="left|top"
+        android:layout_row="2"
+        android:text="R&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="10"
+        android:layout_row="1"
+        android:text="r"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="10"
+        android:layout_row="2"
+        android:text="r&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="10"
+        android:layout_row="3"
+        android:text="f"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="11"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:text="U"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_column="10"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:text="u"
+        android:textSize="18dp" />
+
+</GridLayout>
