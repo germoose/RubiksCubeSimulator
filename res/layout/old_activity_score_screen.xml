@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/rubiks_cube" />
+
+    <ImageView
+        android:id="@+id/yourTimeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/title"
+        android:layout_below="@id/imageView1"
+        android:layout_marginBottom="155dp"
+        android:layout_marginRight="123dp"
+        android:src="@drawable/your_time" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView1"
+        android:text="     Your Times:"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/red_custom_button"
+        android:text=" X " />
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/closeButton"
+        android:background="@drawable/blue_custom_button"
+        android:text="LeaderBoards ->" />
+
+    <TextView
+        android:id="@+id/yourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/yourTimeImage"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:text="00:02:34.49"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:text="PB Av of 50:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/leaderboardButton"
+        android:layout_marginRight="0dp"
+        android:text="Av of 50:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/textView3"
+        android:text="PB Av of 12:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/yourTimeImage"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="Av of 12:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/yourTimeImage"
+        android:layout_centerVertical="true"
+        android:text="PB Av of 5:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:text="Av of 5:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    
+      <TextView
+          android:id="@+id/av5t"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@id/textView5"
+          android:layout_centerVertical="true"
+          android:textColor="#32cd32"
+          android:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/av50t"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/textView3"
+          android:layout_below="@id/textView3"
+          android:layout_centerVertical="true"
+          android:textColor="#32cd32"
+          android:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/PBav50t"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/textView4"
+          android:layout_below="@id/textView4"
+          android:textColor="#32cd32"
+          android:textSize="16sp" />
+      
+      <ScrollView
+        android:id="@+id/av50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/av50t" >
+
+        <LinearLayout
+            android:id="@+id/av50actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/av5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@id/av5t" >
+
+        <LinearLayout
+            android:id="@+id/av5actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/av12t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:textColor="#32cd32"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/PBav12t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:textColor="#32cd32"
+        android:textSize="16sp" />
+    
+     <TextView
+        android:id="@+id/PBav5t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:textColor="#32cd32"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:id="@+id/av12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/av12t"
+        android:layout_below="@+id/yourTime" >
+
+        <LinearLayout
+            android:id="@+id/av12actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    
+     <ScrollView
+         android:id="@+id/PBav12"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/PBav12t"
+         android:layout_below="@+id/PBav12t" >
+
+        <LinearLayout
+            android:id="@+id/PBav12actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    
+    <ScrollView
+        android:id="@+id/PBav50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PBav50t"
+        android:layout_below="@+id/PBav50t" >
+
+        <LinearLayout
+            android:id="@+id/PBav50actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/PBav5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/PBav5t"
+        android:layout_below="@id/PBav5t" >
+
+        <LinearLayout
+            android:id="@+id/PBav5actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -19,18 +19,116 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int buttonBarStyle=0x7f010000;
     }
     public static final class color {
-        public static final int black_overlay=0x7f040000;
+        public static final int black_overlay=0x7f050000;
+        public static final int blue2=0x7f050005;
+        public static final int blue25=0x7f050006;
+        public static final int grey05=0x7f050007;
+        public static final int orange4=0x7f050003;
+        public static final int orange5=0x7f050004;
+        public static final int white1=0x7f050008;
+        public static final int white2=0x7f050009;
+        public static final int yellow1=0x7f050001;
+        public static final int yellow2=0x7f050002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int background=0x7f020000;
+        public static final int blue_custom_button=0x7f020001;
+        public static final int cooltext1165240416=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int purple_custom_button=0x7f020004;
+        public static final int red_custom_button=0x7f020005;
+        public static final int rubiks_cube=0x7f020006;
+        public static final int score_screen_background=0x7f020007;
+        public static final int your_time=0x7f020008;
+        public static final int your_time2=0x7f020009;
+    }
+    public static final class id {
+        public static final int DButton=0x7f08000b;
+        public static final int DPButton=0x7f080009;
+        public static final int Details=0x7f080047;
+        public static final int FButton=0x7f080008;
+        public static final int FPButton=0x7f080016;
+        public static final int LButton=0x7f080003;
+        public static final int LPButton=0x7f080002;
+        public static final int PBav12=0x7f08003e;
+        public static final int PBav12actual=0x7f08003f;
+        public static final int PBav12t=0x7f08003a;
+        public static final int PBav5=0x7f080042;
+        public static final int PBav50=0x7f080040;
+        public static final int PBav50actual=0x7f080041;
+        public static final int PBav50t=0x7f080034;
+        public static final int PBav5actual=0x7f080043;
+        public static final int PBav5t=0x7f08003b;
+        public static final int RButton=0x7f080011;
+        public static final int RPButton=0x7f08000c;
+        public static final int UButton=0x7f08000e;
+        public static final int UPButton=0x7f080000;
+        public static final int av12=0x7f08003c;
+        public static final int av12actual=0x7f08003d;
+        public static final int av12t=0x7f080039;
+        public static final int av5=0x7f080037;
+        public static final int av50=0x7f080035;
+        public static final int av50actual=0x7f080036;
+        public static final int av50t=0x7f080033;
+        public static final int av5actual=0x7f080038;
+        public static final int av5t=0x7f080032;
+        public static final int av_of_1=0x7f08001e;
+        public static final int av_of_12=0x7f080020;
+        public static final int av_of_5=0x7f08001f;
+        public static final int av_of_50=0x7f080021;
+        public static final int buttonList=0x7f080045;
+        public static final int chronometer=0x7f080019;
+        public static final int closeButton=0x7f080029;
+        public static final int dButton=0x7f080006;
+        public static final int dPButton=0x7f08000f;
+        public static final int drawView=0x7f080015;
+        public static final int fButton=0x7f08000a;
+        public static final int fPButton=0x7f080017;
+        public static final int imageView1=0x7f080026;
+        public static final int lButton=0x7f080007;
+        public static final int lPButton=0x7f080018;
+        public static final int leaderboardButton=0x7f08002a;
+        public static final int logo=0x7f080044;
+        public static final int pb_av_of_1=0x7f080022;
+        public static final int pb_av_of_12=0x7f080024;
+        public static final int pb_av_of_5=0x7f080023;
+        public static final int pb_av_of_50=0x7f080025;
+        public static final int percentile=0x7f08001d;
+        public static final int rButton=0x7f08000d;
+        public static final int rPButton=0x7f080010;
+        public static final int solveNumber=0x7f08001c;
+        public static final int summary=0x7f080046;
+        public static final int textView1=0x7f08002f;
+        public static final int textView2=0x7f08002e;
+        public static final int textView3=0x7f08002d;
+        public static final int textView4=0x7f08002c;
+        public static final int textView5=0x7f080031;
+        public static final int textView6=0x7f080030;
+        public static final int theTime=0x7f08001b;
+        public static final int title=0x7f080028;
+        public static final int titleBar=0x7f08001a;
+        public static final int uButton=0x7f080012;
+        public static final int uPButton=0x7f080001;
+        public static final int xButton=0x7f080014;
+        public static final int xPButton=0x7f080005;
+        public static final int yButton=0x7f080004;
+        public static final int yPButton=0x7f080013;
+        public static final int yourTime=0x7f08002b;
+        public static final int yourTimeImage=0x7f080027;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int activity_score_screen=0x7f030001;
+        public static final int old_activity_score_screen=0x7f030002;
+        public static final int score_screen_title_bar=0x7f030003;
+    }
+    public static final class raw {
+        public static final int song1=0x7f040000;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int dummy_button=0x7f050001;
-        public static final int dummy_content=0x7f050002;
+        public static final int app_name=0x7f060000;
+        public static final int dummy_button=0x7f060001;
+        public static final int dummy_content=0x7f060002;
     }
     public static final class style {
         /** 
@@ -57,15 +155,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int ButtonBar=0x7f060003;
-        public static final int ButtonBarButton=0x7f060004;
-        public static final int FullscreenActionBarStyle=0x7f060005;
-        public static final int FullscreenTheme=0x7f060002;
+        public static final int AppTheme=0x7f070001;
+        public static final int ButtonBar=0x7f070003;
+        public static final int ButtonBarButton=0x7f070004;
+        public static final int FullscreenActionBarStyle=0x7f070005;
+        public static final int FullscreenTheme=0x7f070002;
     }
     public static final class styleable {
         /** 

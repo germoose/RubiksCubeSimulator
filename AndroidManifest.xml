@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        android:theme="@android:style/Theme.NoTitleBar">
         <activity
             android:name="ca.germuth.rubiks.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -24,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="ca.germuth.rubiks.ScoreScreenActivity"
+            android:theme="@style/FullscreenTheme" />
     </application>
 
 </manifest>

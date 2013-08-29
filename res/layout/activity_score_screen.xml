@@ -1,0 +1,248 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/score_screen_background"
+        android:orientation="vertical" >
+
+        <ui.ScoreScreenTitleBar
+            android:id="@+id/titleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/titleBar"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/theTime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="30.65"
+                        android:textColor="#000000"
+                        android:textSize="50dp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                    	android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/solveNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="15dp"
+                            android:text="This was your #312th solve"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/percentile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/solveNumber"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/solveNumber"
+                            android:layout_marginBottom="44dp"
+                            android:layout_marginRight="31dp"
+                            android:text="This solve was in the 61st percentile"
+                            android:textColor="#000000" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current Averages"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 1:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/av_of_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30.65"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 5:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/av_of_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="31.67"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 12:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/av_of_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32.14"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 50:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/av_of_50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="33.01"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal Bests:"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 1:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/pb_av_of_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26.71"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 5:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/pb_av_of_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30.17"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 12:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/pb_av_of_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="31.09"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average of 50:"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/pb_av_of_50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32.69"
+                            android:textColor="#0000ff"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>
