@@ -5,13 +5,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/score_screen_background"
+        android:background="@drawable/score_screen_background3"
         android:orientation="vertical" >
 
-        <ui.ScoreScreenTitleBar
+        <ca.germuth.rubiks.ui.ScoreScreenTitleBar
             android:id="@+id/titleBar"
             android:layout_width="fill_parent"
-            android:layout_height="75dp"
+            android:layout_height="80dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true" />
@@ -43,7 +43,7 @@
                         android:gravity="center_vertical|center_horizontal"
                         android:text="30.65"
                         android:textColor="#000000"
-                        android:textSize="50dp"
+                        android:textSize="42dp"
                         android:typeface="serif" />
                 </LinearLayout>
 
@@ -73,7 +73,7 @@
                             android:layout_alignParentBottom="true"
                             android:layout_alignParentRight="true"
                             android:layout_below="@+id/solveNumber"
-                            android:layout_marginBottom="44dp"
+                            android:layout_marginBottom="36dp"
                             android:layout_marginRight="31dp"
                             android:text="This solve was in the 61st percentile"
                             android:textColor="#000000" />
@@ -105,7 +105,8 @@
                             android:layout_height="wrap_content"
                             android:text="Current Averages"
                             android:textColor="#000000"
-                            android:textSize="14dp" />
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -180,9 +181,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Personal Bests:"
+                            android:text="Personal Bests"
                             android:textColor="#000000"
-                            android:textSize="14dp" />
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"

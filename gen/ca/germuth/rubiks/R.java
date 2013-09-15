@@ -17,118 +17,192 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonBarStyle=0x7f010000;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int min=0x7f010002;
     }
     public static final class color {
-        public static final int black_overlay=0x7f050000;
-        public static final int blue2=0x7f050005;
-        public static final int blue25=0x7f050006;
-        public static final int grey05=0x7f050007;
-        public static final int orange4=0x7f050003;
-        public static final int orange5=0x7f050004;
-        public static final int white1=0x7f050008;
-        public static final int white2=0x7f050009;
-        public static final int yellow1=0x7f050001;
-        public static final int yellow2=0x7f050002;
+        public static final int black_overlay=0x7f060000;
+        public static final int blue2=0x7f060005;
+        public static final int blue25=0x7f060006;
+        public static final int grey05=0x7f060007;
+        public static final int orange4=0x7f060003;
+        public static final int orange5=0x7f060004;
+        public static final int white1=0x7f060008;
+        public static final int white2=0x7f060009;
+        public static final int yellow1=0x7f060001;
+        public static final int yellow2=0x7f060002;
     }
     public static final class drawable {
         public static final int background=0x7f020000;
         public static final int blue_custom_button=0x7f020001;
         public static final int cooltext1165240416=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int purple_custom_button=0x7f020004;
-        public static final int red_custom_button=0x7f020005;
-        public static final int rubiks_cube=0x7f020006;
-        public static final int score_screen_background=0x7f020007;
-        public static final int your_time=0x7f020008;
-        public static final int your_time2=0x7f020009;
+        public static final int cube1=0x7f020003;
+        public static final int cube10=0x7f020004;
+        public static final int cube11=0x7f020005;
+        public static final int cube12=0x7f020006;
+        public static final int cube13=0x7f020007;
+        public static final int cube14=0x7f020008;
+        public static final int cube15=0x7f020009;
+        public static final int cube16=0x7f02000a;
+        public static final int cube17=0x7f02000b;
+        public static final int cube18=0x7f02000c;
+        public static final int cube19=0x7f02000d;
+        public static final int cube2=0x7f02000e;
+        public static final int cube20=0x7f02000f;
+        public static final int cube21=0x7f020010;
+        public static final int cube22=0x7f020011;
+        public static final int cube23=0x7f020012;
+        public static final int cube24=0x7f020013;
+        public static final int cube25=0x7f020014;
+        public static final int cube26=0x7f020015;
+        public static final int cube27=0x7f020016;
+        public static final int cube28=0x7f020017;
+        public static final int cube29=0x7f020018;
+        public static final int cube3=0x7f020019;
+        public static final int cube30=0x7f02001a;
+        public static final int cube31=0x7f02001b;
+        public static final int cube32=0x7f02001c;
+        public static final int cube33=0x7f02001d;
+        public static final int cube34=0x7f02001e;
+        public static final int cube35=0x7f02001f;
+        public static final int cube36=0x7f020020;
+        public static final int cube4=0x7f020021;
+        public static final int cube5=0x7f020022;
+        public static final int cube6=0x7f020023;
+        public static final int cube7=0x7f020024;
+        public static final int cube8=0x7f020025;
+        public static final int cube9=0x7f020026;
+        public static final int cube_animation=0x7f020027;
+        public static final int ic_launcher=0x7f020028;
+        public static final int menu_background=0x7f020029;
+        public static final int purple_custom_button=0x7f02002a;
+        public static final int red_custom_button=0x7f02002b;
+        public static final int rubiks_cube=0x7f02002c;
+        public static final int score_screen_background=0x7f02002d;
+        public static final int score_screen_background2=0x7f02002e;
+        public static final int score_screen_background3=0x7f02002f;
+        public static final int score_screen_title=0x7f020030;
+        public static final int white_custom_button=0x7f020031;
+        public static final int your_time=0x7f020032;
+        public static final int your_time2=0x7f020033;
     }
     public static final class id {
-        public static final int DButton=0x7f08000b;
-        public static final int DPButton=0x7f080009;
-        public static final int Details=0x7f080047;
-        public static final int FButton=0x7f080008;
-        public static final int FPButton=0x7f080016;
-        public static final int LButton=0x7f080003;
-        public static final int LPButton=0x7f080002;
-        public static final int PBav12=0x7f08003e;
-        public static final int PBav12actual=0x7f08003f;
-        public static final int PBav12t=0x7f08003a;
-        public static final int PBav5=0x7f080042;
-        public static final int PBav50=0x7f080040;
-        public static final int PBav50actual=0x7f080041;
-        public static final int PBav50t=0x7f080034;
-        public static final int PBav5actual=0x7f080043;
-        public static final int PBav5t=0x7f08003b;
-        public static final int RButton=0x7f080011;
-        public static final int RPButton=0x7f08000c;
-        public static final int UButton=0x7f08000e;
-        public static final int UPButton=0x7f080000;
-        public static final int av12=0x7f08003c;
-        public static final int av12actual=0x7f08003d;
-        public static final int av12t=0x7f080039;
-        public static final int av5=0x7f080037;
-        public static final int av50=0x7f080035;
-        public static final int av50actual=0x7f080036;
-        public static final int av50t=0x7f080033;
-        public static final int av5actual=0x7f080038;
-        public static final int av5t=0x7f080032;
-        public static final int av_of_1=0x7f08001e;
-        public static final int av_of_12=0x7f080020;
-        public static final int av_of_5=0x7f08001f;
-        public static final int av_of_50=0x7f080021;
-        public static final int buttonList=0x7f080045;
-        public static final int chronometer=0x7f080019;
-        public static final int closeButton=0x7f080029;
-        public static final int dButton=0x7f080006;
-        public static final int dPButton=0x7f08000f;
-        public static final int drawView=0x7f080015;
-        public static final int fButton=0x7f08000a;
-        public static final int fPButton=0x7f080017;
-        public static final int imageView1=0x7f080026;
-        public static final int lButton=0x7f080007;
-        public static final int lPButton=0x7f080018;
-        public static final int leaderboardButton=0x7f08002a;
-        public static final int logo=0x7f080044;
-        public static final int pb_av_of_1=0x7f080022;
-        public static final int pb_av_of_12=0x7f080024;
-        public static final int pb_av_of_5=0x7f080023;
-        public static final int pb_av_of_50=0x7f080025;
-        public static final int percentile=0x7f08001d;
-        public static final int rButton=0x7f08000d;
-        public static final int rPButton=0x7f080010;
-        public static final int solveNumber=0x7f08001c;
-        public static final int summary=0x7f080046;
-        public static final int textView1=0x7f08002f;
-        public static final int textView2=0x7f08002e;
-        public static final int textView3=0x7f08002d;
-        public static final int textView4=0x7f08002c;
-        public static final int textView5=0x7f080031;
-        public static final int textView6=0x7f080030;
-        public static final int theTime=0x7f08001b;
-        public static final int title=0x7f080028;
-        public static final int titleBar=0x7f08001a;
-        public static final int uButton=0x7f080012;
-        public static final int uPButton=0x7f080001;
-        public static final int xButton=0x7f080014;
-        public static final int xPButton=0x7f080005;
-        public static final int yButton=0x7f080004;
-        public static final int yPButton=0x7f080013;
-        public static final int yourTime=0x7f08002b;
-        public static final int yourTimeImage=0x7f080027;
+        public static final int DButton=0x7f09000c;
+        public static final int DPButton=0x7f09000a;
+        public static final int Details=0x7f090053;
+        public static final int FButton=0x7f090009;
+        public static final int FPButton=0x7f090017;
+        public static final int LButton=0x7f090004;
+        public static final int LPButton=0x7f090003;
+        public static final int PBav12=0x7f09004b;
+        public static final int PBav12actual=0x7f09004c;
+        public static final int PBav12t=0x7f090047;
+        public static final int PBav5=0x7f09004f;
+        public static final int PBav50=0x7f09004d;
+        public static final int PBav50actual=0x7f09004e;
+        public static final int PBav50t=0x7f090041;
+        public static final int PBav5actual=0x7f090050;
+        public static final int PBav5t=0x7f090048;
+        public static final int RButton=0x7f090012;
+        public static final int RPButton=0x7f09000d;
+        public static final int RelativeLayout=0x7f090000;
+        public static final int ReplayButton=0x7f090054;
+        public static final int UButton=0x7f09000f;
+        public static final int UPButton=0x7f090001;
+        public static final int av12=0x7f090049;
+        public static final int av12actual=0x7f09004a;
+        public static final int av12t=0x7f090046;
+        public static final int av5=0x7f090044;
+        public static final int av50=0x7f090042;
+        public static final int av50actual=0x7f090043;
+        public static final int av50t=0x7f090040;
+        public static final int av5actual=0x7f090045;
+        public static final int av5t=0x7f09003f;
+        public static final int av_of_1=0x7f090026;
+        public static final int av_of_12=0x7f090028;
+        public static final int av_of_5=0x7f090027;
+        public static final int av_of_50=0x7f090029;
+        public static final int buttonList=0x7f090051;
+        public static final int chronometer=0x7f09001a;
+        public static final int chronometer3d=0x7f09001c;
+        public static final int closeButton=0x7f090036;
+        public static final int color_picker_view=0x7f09002e;
+        public static final int cubeGIF=0x7f09001d;
+        public static final int dButton=0x7f090007;
+        public static final int dPButton=0x7f090010;
+        public static final int drawView=0x7f090016;
+        public static final int fButton=0x7f09000b;
+        public static final int fPButton=0x7f090018;
+        public static final int gameButton=0x7f09001e;
+        public static final int hex_val=0x7f090030;
+        public static final int imageView1=0x7f090033;
+        public static final int lButton=0x7f090008;
+        public static final int lPButton=0x7f090019;
+        public static final int leaderboardButton=0x7f090037;
+        public static final int new_color_panel=0x7f090032;
+        public static final int old_color_panel=0x7f090031;
+        public static final int pb_av_of_1=0x7f09002a;
+        public static final int pb_av_of_12=0x7f09002c;
+        public static final int pb_av_of_5=0x7f09002b;
+        public static final int pb_av_of_50=0x7f09002d;
+        public static final int percentile=0x7f090025;
+        public static final int quitButton=0x7f090021;
+        public static final int rButton=0x7f09000e;
+        public static final int rPButton=0x7f090011;
+        public static final int scoreButton=0x7f09001f;
+        public static final int seekBarPrefBarContainer=0x7f090058;
+        public static final int seekBarPrefSeekBar=0x7f090059;
+        public static final int seekBarPrefUnitsLeft=0x7f090057;
+        public static final int seekBarPrefUnitsRight=0x7f090055;
+        public static final int seekBarPrefValue=0x7f090056;
+        public static final int settingsButton=0x7f090020;
+        public static final int solveNumber=0x7f090024;
+        public static final int summary=0x7f090052;
+        public static final int textView1=0x7f09003c;
+        public static final int textView2=0x7f09003b;
+        public static final int textView3=0x7f09003a;
+        public static final int textView4=0x7f090039;
+        public static final int textView5=0x7f09003e;
+        public static final int textView6=0x7f09003d;
+        public static final int text_hex_wrapper=0x7f09002f;
+        public static final int theTime=0x7f090023;
+        public static final int threedDrawView=0x7f09001b;
+        public static final int title=0x7f090035;
+        public static final int titleBar=0x7f090022;
+        public static final int uButton=0x7f090013;
+        public static final int uPButton=0x7f090002;
+        public static final int xButton=0x7f090015;
+        public static final int xPButton=0x7f090006;
+        public static final int yButton=0x7f090005;
+        public static final int yPButton=0x7f090014;
+        public static final int yourTime=0x7f090038;
+        public static final int yourTimeImage=0x7f090034;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_score_screen=0x7f030001;
-        public static final int old_activity_score_screen=0x7f030002;
-        public static final int score_screen_title_bar=0x7f030003;
+        public static final int activity_game_screen=0x7f030000;
+        public static final int activity_game_screen_3d=0x7f030001;
+        public static final int activity_game_select=0x7f030002;
+        public static final int activity_main_menu=0x7f030003;
+        public static final int activity_score_screen=0x7f030004;
+        public static final int dialog_color_picker=0x7f030005;
+        public static final int old_activity_score_screen=0x7f030006;
+        public static final int score_screen_title_bar=0x7f030007;
+        public static final int seek_bar_preference=0x7f030008;
     }
     public static final class raw {
-        public static final int song1=0x7f040000;
+        public static final int song1=0x7f050000;
+        public static final int song2=0x7f050001;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
-        public static final int dummy_button=0x7f060001;
-        public static final int dummy_content=0x7f060002;
+        public static final int app_name=0x7f070000;
+        public static final int dummy_button=0x7f070001;
+        public static final int dummy_content=0x7f070002;
     }
     public static final class style {
         /** 
@@ -155,15 +229,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
-        public static final int ButtonBar=0x7f070003;
-        public static final int ButtonBarButton=0x7f070004;
-        public static final int FullscreenActionBarStyle=0x7f070005;
-        public static final int FullscreenTheme=0x7f070002;
+        public static final int AppTheme=0x7f080001;
+        public static final int ButtonBar=0x7f080003;
+        public static final int ButtonBarButton=0x7f080004;
+        public static final int FullscreenActionBarStyle=0x7f080005;
+        public static final int FullscreenTheme=0x7f080002;
+    }
+    public static final class xml {
+        public static final int preferences=0x7f040000;
     }
     public static final class styleable {
         /** 
@@ -206,5 +283,40 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name ca.germuth.rubiks:buttonBarStyle
         */
         public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
+        /**  note: to re-use an existing Android attribute not already used by the superclass, name should have prefix "android:" and do not define a format 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #NumberPickerDialogPreference_android_max android:max}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberPickerDialogPreference_min ca.germuth.rubiks:min}</code></td><td></td></tr>
+           </table>
+           @see #NumberPickerDialogPreference_android_max
+           @see #NumberPickerDialogPreference_min
+         */
+        public static final int[] NumberPickerDialogPreference = {
+            0x01010136, 0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#max}
+          attribute's value can be found in the {@link #NumberPickerDialogPreference} array.
+          @attr name android:max
+        */
+        public static final int NumberPickerDialogPreference_android_max = 0;
+        /**
+          <p>This symbol is the offset where the {@link ca.germuth.rubiks.R.attr#min}
+          attribute's value can be found in the {@link #NumberPickerDialogPreference} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ca.germuth.rubiks:min
+        */
+        public static final int NumberPickerDialogPreference_min = 1;
     };
 }

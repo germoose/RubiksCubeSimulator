@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com"
+    android:key="preference_screen" >
+
+    <CheckBoxPreference
+        android:key="pref_sync"
+        android:title="ENabled"
+        android:summary="Do you want this"
+        android:defaultValue="true" />
+    
+    <PreferenceCategory android:title="Solve Values" >
+        <ca.germuth.rubiks.preference.SeekBarPreference
+            android:defaultValue="15"
+            android:key="inspection_time"
+            android:max="15"
+            android:summary="Amount of time to observe cube before timer begins"
+            android:title="Inspection Time"
+            robobunny:min="0"
+            robobunny:unitsLeft=""
+            robobunny:unitsRight=" sec" />
+
+        <ca.germuth.rubiks.preference.SeekBarPreference
+            android:defaultValue="25"
+            android:key="scramble_length"
+            android:max="40"
+            android:summary="Amount of moves applied in a random scramble"
+            android:title="Scramble Length"
+            robobunny:min="1"
+            robobunny:unitsLeft=""
+            robobunny:unitsRight=" sec" />
+    </PreferenceCategory>
+    
+	<!-- 
+    <PreferenceCategory 
+        android:title="Colour Selection" >
+
+        <ca.germuth.rubiks.preference.ColorPickerPreference
+            android:defaultValue="#ffffff"
+            android:key="inspection_colour"
+            android:summary="Inspection Time"
+            android:title="Set the colour of the inspection time numbers" 
+            />
+        
+    </PreferenceCategory>
+	-->
+</PreferenceScreen>

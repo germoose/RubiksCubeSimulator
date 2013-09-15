@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:columnCount="12"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:rowCount="7"
+    android:screenOrientation="landscape"
+    android:id="@+id/RelativeLayout"
+    tools:context=".GameActivity" >
+
+     <Button
+        android:id="@+id/UPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="U&apos;"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/uPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/UPButton"
+        android:text="u&apos;"
+        android:textSize="18dp" />
+    
+     <Button
+        android:id="@+id/LPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UPButton"
+        android:text="L&apos;"
+        android:textSize="18dp" />
+      
+     <Button
+         android:id="@+id/LButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/LPButton"
+         android:text="L"
+         android:textSize="18dp" />
+
+	<!--  
+    <cubeViews.QCubeView
+        android:id="@+id/drawView"
+        android:layout_width="276dp"
+        android:layout_column="2"
+        android:layout_columnSpan="8"
+        android:layout_gravity="fill_horizontal|fill_vertical"
+        android:layout_row="0"
+        android:layout_rowSpan="6"
+        android:background="#545454"
+        android:textSize="18dp" />
+	-->
+
+	<Button
+	    android:id="@+id/yButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/xPButton"
+	    android:layout_alignBottom="@+id/xPButton"
+	    android:layout_toLeftOf="@+id/dButton"
+	    android:text="y&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/lButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/LButton"
+	    android:layout_alignBottom="@+id/LButton"
+	    android:layout_toRightOf="@+id/LButton"
+	    android:text="l"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/FButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/DPButton"
+	    android:layout_toRightOf="@+id/fButton"
+	    android:text="F"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/DPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/DButton"
+	    android:layout_alignBottom="@+id/DButton"
+	    android:layout_alignParentRight="true"
+	    android:text="D&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/fButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/DPButton"
+	    android:layout_toLeftOf="@+id/DPButton"
+	    android:text="f"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/RPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/FButton"
+	    android:layout_toRightOf="@+id/rButton"
+	    android:text="R&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/UButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:text="U"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/dPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/fButton"
+	    android:layout_below="@+id/fButton"
+	    android:text="d&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/rPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/FButton"
+	    android:layout_toLeftOf="@+id/FButton"
+	    android:text="r&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/rButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/rPButton"
+	    android:layout_toLeftOf="@+id/UButton"
+	    android:text="r"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/RButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/RPButton"
+	    android:layout_toRightOf="@+id/rPButton"
+	    android:text="R"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/uButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/rButton"
+	    android:layout_toLeftOf="@+id/UButton"
+	    android:text="u"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/yPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/xButton"
+	    android:text="y"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/xPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_toLeftOf="@+id/yPButton"
+	    android:text="x&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/dButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/DButton"
+	    android:layout_alignBottom="@+id/DButton"
+	    android:layout_toRightOf="@+id/DButton"
+	    android:text="d"
+	    android:textSize="18dp" />
+
+	<ca.germuth.rubiks.cubeViews.HiGamesView
+	    android:id="@+id/drawView"
+	    android:layout_width="286dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="#000000"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/FPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/DButton"
+	    android:layout_alignParentLeft="true"
+	    android:text="F&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/DButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/fPButton"
+	    android:text="D"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/xButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/dButton"
+	    android:layout_alignParentBottom="true"
+	    android:text="x"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/fPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/LButton"
+	    android:layout_toRightOf="@+id/FPButton"
+	    android:text="f&apos;"
+	    android:textSize="18dp" />
+
+	<Button
+	    android:id="@+id/lPButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/LButton"
+	    android:layout_toRightOf="@+id/LPButton"
+	    android:text="l&apos;"
+	    android:textSize="18dp" />
+
+	<ca.germuth.rubiks.util.Chronometer
+	    android:id="@+id/chronometer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true" 
+	    android:textSize="25dp"/>
+
+</RelativeLayout>
+
+
