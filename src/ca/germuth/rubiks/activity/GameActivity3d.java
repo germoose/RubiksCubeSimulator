@@ -55,6 +55,14 @@ public class GameActivity3d extends Activity {
 		this.chrono = (Chronometer)findViewById(R.id.chronometer3d);
 		this.mView = (MyGLSurfaceView) findViewById( R.id.threedDrawView );
 		
+		Bundle extras = getIntent().getExtras();
+		int size = 3;
+		if (extras != null) {
+		    size = extras.getInt("cube");
+		}
+		
+		this.mView.initializeRenderer( size );
+		
 		setUpButtons();
 		
 	}

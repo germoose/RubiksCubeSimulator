@@ -47,6 +47,18 @@ public class GLVertex {
 		return false;
 	}
 	
+	public void translate(char axis, double distance){
+		if (axis == 'X') {
+			this.x += distance;
+		}
+		else if(axis == 'Y'){
+			this.y += distance;
+		}
+		else if(axis == 'Z'){
+			this.z += distance;
+		}
+	}
+	
 	/**
 	 * Rotates a single point
 	 * @param face

@@ -16,6 +16,7 @@ import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class MainMenuActivity extends Activity{
@@ -43,6 +44,7 @@ public class MainMenuActivity extends Activity{
 			@Override
 			public void onClick(View arg0) {
 				Intent myIntent = new Intent(MainMenuActivity.this, GameActivity3d.class);
+				myIntent.putExtra("cube", 2);
 				continueMusic = false;
 				MainMenuActivity.this.startActivity(myIntent);
 			}

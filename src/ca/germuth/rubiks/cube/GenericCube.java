@@ -336,50 +336,82 @@ public class GenericCube {
 	}
 	
 	public void rTurn() {
-		this.xTurn();
-		this.LTurn();
+		sideTurn( this.size - 1);
+		sideTurn( this.size - 2);
+		rotateFace( this.right );
 	}
 	public void rPrimeTurn() {
-		this.xPrimeTurn();
-		this.LPrimeTurn();
+		rTurn();
+		rTurn();
+		rTurn();
+		//this.xPrimeTurn();
+		//this.LPrimeTurn();
 	}
 	
 	public void uPrimeTurn() {
-		this.yPrimeTurn();
-		this.DPrimeTurn();
+		//this.yPrimeTurn();
+		//this.DPrimeTurn();
+		uTurn();
+		uTurn();
+		uTurn();
 	}
 	public void uTurn() {
-		this.yTurn();
-		this.DTurn();
+		//this.yTurn();
+		//this.DTurn();
+		rotateFace(this.top);
+		topTurn(0);
+		topTurn(1);
 	}
 	
 	public void fTurn() {
-		this.zTurn();
-		this.BTurn();
+		frontTurn(size - 1);
+		frontTurn(size - 2);
+		rotateFace(this.front);
+		//this.zTurn();
+		//this.BTurn();
 	}
 	
 	public void fPrimeTurn() {
-		this.zPrimeTurn();
-		this.BPrimeTurn();
+		//this.zPrimeTurn();
+		//this.BPrimeTurn();
+		fTurn();
+		fTurn();
+		fTurn();
 	}
 	
 	public void lTurn() {
-		this.xPrimeTurn();
-		this.RTurn();
+		//this.xPrimeTurn();
+		//this.RTurn();
+		lPrimeTurn();
+		lPrimeTurn();
+		lPrimeTurn();
 	}
 	public void lPrimeTurn() {
-		this.xTurn();
-		this.RPrimeTurn();
+		sideTurn(0);
+		sideTurn(1);
+		rotateFace(this.left);
+		rotateFace(this.left);
+		rotateFace(this.left);
+		//this.xTurn();
+		//this.RPrimeTurn();
 	}
 	
 	public void dTurn(){
-		this.UTurn();
-		this.yPrimeTurn();
+		//this.UTurn();
+		//this.yPrimeTurn();
+		dPrimeTurn();
+		dPrimeTurn();
+		dPrimeTurn();
 	}
 	
 	public void dPrimeTurn(){
-		this.UPrimeTurn();
-		this.yTurn();
+		//this.UPrimeTurn();
+		//this.yTurn();
+		topTurn( size - 1 );
+		topTurn( size - 2 );
+		rotateFace(this.bottom);
+		rotateFace(this.bottom);
+		rotateFace(this.bottom);
 	}
 	
 	public void scrambleCube() {

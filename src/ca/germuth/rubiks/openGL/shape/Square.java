@@ -172,6 +172,19 @@ public class Square {
 		}	
 	}
 	
+	public void translate(char axis, double distance){
+		for(int i = 0; i < this.verticies.size(); i++){
+			this.verticies.get(i).translate(axis, distance);
+		}
+	}
+	
+	public static void translateAll(ArrayList<Square> face, char axis, double distance){
+		for(int i = 0; i < face.size(); i++){
+			Square s = face.get(i);
+			s.translate( axis, distance );
+		}
+	}
+	
 	
 	public static void rotateAll(ArrayList<Square> face, char axis, float radians){
 		for(int i = 0; i < face.size(); i++){

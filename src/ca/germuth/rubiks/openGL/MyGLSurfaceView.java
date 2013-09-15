@@ -1,14 +1,16 @@
 package ca.germuth.rubiks.openGL;
 
 import ca.germuth.rubiks.cube.GenericCube;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 public class MyGLSurfaceView extends GLSurfaceView {
 
-	private final MyRenderer mRenderer;
+	private MyRenderer mRenderer;
 	private GenericCube mCube;
 
 	public MyGLSurfaceView(Context context) {
@@ -17,15 +19,6 @@ public class MyGLSurfaceView extends GLSurfaceView {
 		// Create an OpenGL ES 2.0 context.
 		setEGLContextClientVersion(2);
 		setEGLConfigChooser(8, 8, 8, 8, 16, 0);
-		
-		// Set the Renderer for drawing on the GLSurfaceView
-		this.mCube = new GenericCube(3);
-		mRenderer = new MyRenderer( this.mCube );
-		setRenderer(mRenderer);
-		
-
-		// Render the view only when there is a change in the drawing data
-		setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 		
 	}
 	
@@ -36,15 +29,16 @@ public class MyGLSurfaceView extends GLSurfaceView {
 		setEGLContextClientVersion(2);
 		setEGLConfigChooser(8, 8, 8, 8, 16, 0);
 		
+	}
+
+	public void initializeRenderer(int cubeSize) {
 		// Set the Renderer for drawing on the GLSurfaceView
-		this.mCube = new GenericCube(3);
-		mRenderer = new MyRenderer( this.mCube );
+		this.mCube = new GenericCube( cubeSize );
+		mRenderer = new MyRenderer(this.mCube);
 		setRenderer(mRenderer);
-		
 
 		// Render the view only when there is a change in the drawing data
-		setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
-		
+		setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 	}
 
 	private final float TOUCH_SCALE_FACTOR = 180.0f / 320;
@@ -61,6 +55,13 @@ public class MyGLSurfaceView extends GLSurfaceView {
 		float y = e.getY();
 
 		switch (e.getAction()) {
+		case MotionEvent.ACTION_POINTER_UP:
+			Activity thisOne = (Activity) this.getContext();
+			Intent intent = thisOne.getIntent();
+			intent.putExtra("cube", this.mCube.getSize() + 1 );
+			thisOne.finish();
+			thisOne.startActivity(intent);
+			break;
 		case MotionEvent.ACTION_MOVE:
 
 			float dx = x - mPreviousX;
