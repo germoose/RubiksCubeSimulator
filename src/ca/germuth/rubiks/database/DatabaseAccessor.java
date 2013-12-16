@@ -13,8 +13,11 @@ public class DatabaseAccessor {
 	// Database fields
 	  private SQLiteDatabase database;
 	  private SolveTimeTable dbHelper;
-	  private String[] allColumns = { SolveTimeTable.COLUMN_ID,
-	      SolveTimeTable.COLUMN_TIME };
+	  private String[] allColumns = { 
+			  SolveTimeTable.COLUMN_ID,
+			  SolveTimeTable.COLUMN_TIME,
+			  //SolveTimeTable.COLUMN_DATE,
+			  SolveTimeTable.COLUMN_PUZZLE};
 
 	  public DatabaseAccessor(Context context) {
 	    dbHelper = new SolveTimeTable(context);
@@ -27,49 +30,50 @@ public class DatabaseAccessor {
 	  public void close() {
 	    dbHelper.close();
 	  }
-
-	  public SolveTime createSolveTime(String time) {
-	    ContentValues values = new ContentValues();
-	    values.put(SolveTimeTable.COLUMN_TIME, time);
-	    long insertId = database.insert(SolveTimeTable.TABLE_SOLVE_TIMES, null,
-	        values);
-	    Cursor cursor = database.query(SolveTimeTable.TABLE_SOLVE_TIMES,
-	        allColumns, SolveTimeTable.COLUMN_ID + " = " + insertId, null,
-	        null, null, null);
-	    cursor.moveToFirst();
-	    SolveTime newSolveTime = cursorToSolveTime(cursor);
-	    cursor.close();
-	    return newSolveTime;
+	  
+	  public void addSolve(long time, int puzzle){
+		  ContentValues values = new ContentValues();
+		  values.put( SolveTimeTable.COLUMN_TIME, time);
+		  values.put( SolveTimeTable.COLUMN_PUZZLE, puzzle);
+		  
+		  long rowID = this.database.insert( SolveTimeTable.TABLE_SOLVE_TIMES, null, values);
 	  }
 
-	  public void deleteSolveTime(SolveTime time) {
-	    long id = time.getId();
-	    System.out.println("SolveTime deleted with id: " + id);
-	    database.delete(SolveTimeTable.TABLE_SOLVE_TIMES, SolveTimeTable.COLUMN_ID
-	        + " = " + id, null);
+	  public SolveTime getFastestSolve(int puzzle){
+		  SolveTime fastest = null;
+		  
+		
+		  Cursor cursor = this.database.query(
+				  SolveTimeTable.TABLE_SOLVE_TIMES, null, 
+				  SolveTimeTable.COLUMN_PUZZLE + "=" + puzzle, new String[]{SolveTimeTable.COLUMN_PUZZLE}, 
+				  null, null, SolveTimeTable.COLUMN_TIME + " ASC", "1");
+		  
+		  cursor.moveToFirst();
+		  
+		  while( !cursor.isAfterLast() ){
+			  long rowID = cursor.getLong( cursor.getColumnIndex( SolveTimeTable.COLUMN_ID ) );
+			  long solveTime = cursor.getLong( cursor.getColumnIndex( SolveTimeTable.COLUMN_TIME ) );
+			  int puzz = cursor.getInt( cursor.getColumnIndex( SolveTimeTable.COLUMN_PUZZLE) );
+			  fastest = new SolveTime(rowID, solveTime, puzz);
+		  }
+		  
+		  return fastest;
+		 
 	  }
-
-	  public List<SolveTime> getAllSolveTimes() {
-	    List<SolveTime> times = new ArrayList<SolveTime>();
-
-	    Cursor cursor = database.query(SolveTimeTable.TABLE_SOLVE_TIMES,
-	        allColumns, null, null, null, null, null);
-
-	    cursor.moveToFirst();
-	    while (!cursor.isAfterLast()) {
-	      SolveTime time = cursorToSolveTime(cursor);
-	      times.add(time);
-	      cursor.moveToNext();
-	    }
-	    // Make sure to close the cursor
-	    cursor.close();
-	    return times;
-	  }
-
-	  private SolveTime cursorToSolveTime(Cursor cursor) {
-	    SolveTime time = new SolveTime();
-	    time.setId(cursor.getInt(0));
-	    time.setTime(cursor.getString(1));
-	    return time;
-	  }
+//	  public List<SolveTime> getAllSolveTimes() {
+//	    List<SolveTime> times = new ArrayList<SolveTime>();
+//
+//	    Cursor cursor = database.query(SolveTimeTable.TABLE_SOLVE_TIMES,
+//	        allColumns, null, null, null, null, null);
+//
+//	    cursor.moveToFirst();
+//	    while (!cursor.isAfterLast()) {
+//	      SolveTime time = cursorToSolveTime(cursor);
+//	      times.add(time);
+//	      cursor.moveToNext();
+//	    }
+//	    // Make sure to close the cursor
+//	    cursor.close();
+//	    return times;
+//	  }
 }

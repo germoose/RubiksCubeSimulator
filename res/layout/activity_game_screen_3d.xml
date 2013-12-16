@@ -240,6 +240,16 @@
 	    android:layout_alignParentBottom="true"
 	    android:layout_centerHorizontal="true" 
 	    android:textSize="25dp"/>
+	
+	<TextView
+	    android:id="@+id/inspectionTime"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+	    android:textColor="#82ffffff"
+	    android:textSize="250sp"/>
 
 </RelativeLayout>
 

@@ -28,7 +28,7 @@
             android:title="Scramble Length"
             robobunny:min="1"
             robobunny:unitsLeft=""
-            robobunny:unitsRight=" sec" />
+            robobunny:unitsRight=" moves" />
     </PreferenceCategory>
     
 	<!-- 

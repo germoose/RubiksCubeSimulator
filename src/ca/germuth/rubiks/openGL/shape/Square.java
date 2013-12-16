@@ -143,7 +143,8 @@ public class Square {
 		color[1] = this.mColour.getGreen();
 		color[2] = this.mColour.getBlue();
 		GLES20.glUniform4fv(mColorHandle, 1, color, 0);
-
+		//GLES20.glUniform3fv(mColorHandle, 1, color, 0);
+		
 		// get handle to shape's transformation matrix
 		mMVPMatrixHandle = GLES20.glGetUniformLocation(mProgram, "uMVPMatrix");
 		MyRenderer.checkGlError("glGetUniformLocation");

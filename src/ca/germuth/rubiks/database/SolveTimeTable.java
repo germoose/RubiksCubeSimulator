@@ -7,18 +7,22 @@ import android.util.Log;
 
 public class SolveTimeTable extends SQLiteOpenHelper {
 
-  public static final String TABLE_SOLVE_TIMES = "times";
-  public static final String COLUMN_ID = "_id";
+  public static final String TABLE_SOLVE_TIMES = "solve_times_";
+  public static final String COLUMN_ID = "id";
   public static final String COLUMN_TIME = "time";
+  //public static final String COLUMN_DATE = "date";
+  public static final String COLUMN_PUZZLE = "puzzle";
 
   private static final String DATABASE_NAME = "commments.db";
   private static final int DATABASE_VERSION = 1;
-
+  
   // Database creation sql statement
-  private static final String DATABASE_CREATE = "create table "
-      + TABLE_SOLVE_TIMES + "(" + COLUMN_ID
-      + " integer primary key autoincrement, " + COLUMN_TIME
-      + " text not null);";
+  private static final String CREATE_TABLE = 
+		  "create table " + TABLE_SOLVE_TIMES + "(" + 
+		  COLUMN_ID + " integer primary key autoincrement, " +
+		  COLUMN_TIME + " BIGINT, " + 
+		  //COLUMN_DATE + " DATETIME, " + 
+		  COLUMN_PUZZLE + " INTEGER" + ");";
 
   public SolveTimeTable(Context context) {
     super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -26,7 +30,7 @@ public class SolveTimeTable extends SQLiteOpenHelper {
 
   @Override
   public void onCreate(SQLiteDatabase database) {
-    database.execSQL(DATABASE_CREATE);
+    database.execSQL(CREATE_TABLE);
   }
 
   @Override

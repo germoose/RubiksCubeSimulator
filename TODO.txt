@@ -1,0 +1,38 @@
+- Make Organized statistics for each cube size and possible user, then show relevant statistics for that cube after solve
+- Score Screen Activity needs a 'other cubes' button
+- Score Screen has no details
+- Score Screen colour scheme, perhaps all one colour with different shades, ( or keep it )
+- Screen to select the proper cube
+- solve time should be inserted into database or whatever after solving, not when entering score screen
+- make replay work again, and this time make it better ( not based on chrono )
+- make sure music is smooth across all activities
+
+	- maybe buttons are colored according to the layer they turn
+- make settings work + add more
+	- Colour for each face of cube
+	- preferred view for cube ( qCube, Hi-Games, realistic )
+	- enable music
+	- animated turns?
+- Make Rubik's cube bigger 
+- Make animated turns
+- Make it turnable by touch
+- Add / Remove buttons depending on size. Need proper notation
+- Add megaminx and possibly other cubes
+- Achievements
+	- solve each cube
+	- run into each parity on 4x4 ...
+	- run into no parity on 4x4
+	- maybe you put in your average and it gives you achievements based on that
+- Leaderboards
+	- World 24 hour / week / forever for each puzzle
+	- maybe average of X records
+	- 
+- Opening Screen
+- About us page, with contact info
+- Music working in all activities
+- new icon
+- make sure music is useable / licencsed, along with gif and other stolen things
+	- ask Hi-games maker and ask qqCube
+- make work on every screen size ( portrait AND landscape? )
+- make code not bad
+- PLL / OLL Practice

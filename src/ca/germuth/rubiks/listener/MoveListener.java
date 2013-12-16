@@ -2,8 +2,10 @@ package ca.germuth.rubiks.listener;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.HashMap;
 
+import ca.germuth.rubiks.cube.GenericCube;
 import ca.germuth.rubiks.cubeViews.HiGamesView;
 import ca.germuth.rubiks.openGL.MyGLSurfaceView;
 import ca.germuth.rubiks.util.Chronometer;
@@ -13,6 +15,7 @@ import android.widget.Button;
 
 /**
  * movelistener
+ * TODO this doesn't even close to working anymore
  * 
  * Also records every move of the solve
  * @author Administrator
@@ -22,7 +25,8 @@ public class MoveListener implements View.OnClickListener{
 	private Button myButton;
 	
 	private static boolean recording;
-	private static String moves = "";
+	//private static String moves = "";
+	private static ArrayList<String> moves = new ArrayList<String>();
 	private static Chronometer chrono;
 	public static final HashMap<Button, Method> buttonToTurn = new HashMap<Button, Method>();
 	private static MyGLSurfaceView view;
@@ -40,7 +44,9 @@ public class MoveListener implements View.OnClickListener{
 			e.printStackTrace();
 		}
 		getView().requestRender();
-		moves += chrono.getText() + " " + this.myButton.getText() + "; ";
+		//moves += chrono.getText() + " " + this.myButton.getText() + "; ";
+		//moves.add(this.chrono);
+    	view.checkSolved();
 	}
 	public static String getScramble(){
 		return scramble;
@@ -49,13 +55,13 @@ public class MoveListener implements View.OnClickListener{
 		scramble = s;
 	}
 	
-	public static void reset(){
-		moves = "";
-	}
-	
-	public static String getMoves(){
-		return moves;
-	}
+//	public static void reset(){
+//		moves = "";
+//	}
+//	
+//	public static String getMoves(){
+//		return moves;
+//	}
 	
 	public static void setChronometer(Chronometer c){
 		chrono = c;
@@ -63,7 +69,7 @@ public class MoveListener implements View.OnClickListener{
 	
 	public static void startRecording(){
 		MoveListener.recording = true;
-		reset();
+		//reset();
 	}
 	
 	public static void stopRecording(){

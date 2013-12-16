@@ -2,6 +2,8 @@ package ca.germuth.rubiks.cube;
 
 import java.util.Random;
 
+import android.content.SharedPreferences;
+
 import ca.germuth.rubiks.listener.MoveListener;
 
 /**
@@ -414,10 +416,11 @@ public class GenericCube {
 		rotateFace(this.bottom);
 	}
 	
-	public void scrambleCube() {
+	public void scrambleCube(int scrambleLength) {
 		Random randomGenerator = new Random();
 		String scramble = "";
-		for(int i = 0; i<2; i++) {
+
+		for(int i = 0; i < scrambleLength; i++) {
 			int r = randomGenerator.nextInt(10);
 			switch(r) {
 			case 0: this.UTurn(); scramble += ("U ;"); break;
@@ -568,15 +571,32 @@ public class GenericCube {
 	 * @return the isSolved
 	 */
 	public boolean isSolved() {
-		return isSolved;
+		int temp = 0; 
+		for (int k = 0; k < this.size; k++) {
+			for (int i = 0; i < this.size; i++) {
+				if(
+					top[0][0] == top[k][i] &&
+					front[0][0] == front[k][i] &&
+					right [0][0] == right[k][i] &&
+					left [0][0] == left[k][i] &&
+					back [0][0] == back[k][i] &&
+					bottom [0][0] == bottom[k][i] ) 
+				{
+					temp++; 
+				}
+			}
+		}
+		
+		if(temp == size*size) 
+		{
+			this.isSolved = true;
+			
+		}
+		else 
+		{ 
+			this.isSolved = false;  
+		}
+		
+		return this.isSolved;
 	}
-
-	/**
-	 * @param isSolved the isSolved to set
-	 */
-	public void setSolved(boolean isSolved) {
-		this.isSolved = isSolved;
-	}
-	
-	
 }

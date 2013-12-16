@@ -99,7 +99,7 @@ public class GameActivity extends Activity {
         mShaker.setOnShakeListener(new ShakeListener.OnShakeListener() {
 			@Override
 			public void onShake() {
-				getDv().getMyCube().scrambleCube();
+				//getDv().getMyCube().scrambleCube();
 				getDv().invalidate();
 				
 				setButtons(false);

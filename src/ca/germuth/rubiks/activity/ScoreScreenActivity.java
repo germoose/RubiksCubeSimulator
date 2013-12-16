@@ -45,7 +45,7 @@ public class ScoreScreenActivity extends Activity{
 		try {
 			super.onCreate(savedInstanceState);
 
-			continueMusic = false; 
+			continueMusic = false;
 			
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 			requestWindowFeature(Window.FEATURE_NO_TITLE);

@@ -1,5 +1,7 @@
 package ca.germuth.rubiks.activity;
 
+import javax.microedition.khronos.opengles.GL10;
+
 import ca.germuth.rubiks.R;
 import ca.germuth.rubiks.R.drawable;
 import ca.germuth.rubiks.R.id;
@@ -31,7 +33,7 @@ public class MainMenuActivity extends Activity{
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 		setContentView(R.layout.activity_main_menu);
-
+		
 		continueMusic = false;
 		MusicManager.start(this, MusicManager.MUSIC_MENU);
 		
